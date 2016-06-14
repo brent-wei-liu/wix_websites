@@ -1,0 +1,44 @@
+http://www.tutorialspoint.com/nodejs/
+
+sudo apt-get install nodejs
+nodejs main.js
+
+$ npm --version
+
+
+following is the command to install a famous Node.js web framework module
+called express:
+
+$ npm install express
+Now you can use this module in your js file as following:
+
+var express = require('express');
+
+
+
+# Global vs Local installation
+By default, npm installs any dependency in the local mode. Here local mode
+refers to the package installation in node_modules directory lying in the
+folder where Node application is present. Locally deployed packages are
+accessible via require() method. For example when we installed express module,
+it created node_modules directory in the current directory where it installed
+express module.
+
+$ ls -l
+total 0
+drwxr-xr-x 3 root root 20 Mar 17 02:23 node_modules
+
+
+
+$ npm ls
+$ npm ls -g
+$ npm uninstall express
+$ npm update express
+
+
+# Express Framework
+
+$ npm install express --save
+$ npm install body-parser --save
+$ npm install cookie-parser --save
+$ npm install multer --save
